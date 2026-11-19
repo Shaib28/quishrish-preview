@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>QUISHRISH — Feel it. Find it. Win it!</title>
+  <meta name="description" content="QUISHRISH is the squishy monster board game: reach into the monster's mouth, feel the squishies, guess who is who. Ages 6+, 2–6 players. Coming soon." />
+  <meta name="theme-color" content="#2E1041" />
+  <meta property="og:title" content="QUISHRISH — Feel it. Find it. Win it!" />
+  <meta property="og:description" content="The squishy monster board game. Reach in... if you dare!" />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="preload" as="image" type="image/avif" href="./img/monster.avif" fetchpriority="high" />
+  <script type="module" crossorigin src="./assets/index-DEI8JYap.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DXHLFr5m.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- shared burst shape -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="burst" viewBox="-6 -6 112 112"><path id="burst-path" d="" /></symbol>
+      <symbol id="hand" viewBox="0 0 64 72">
+        <path d="M18 70c-6-3-12-12-14-20-2-5 0-8 3-8s5 3 7 7V14a5 5 0 0 1 10 0v20V8a5 5 0 0 1 10 0v26V12a5 5 0 0 1 10 0v24-14a5 5 0 0 1 10 0v26c0 12-6 20-14 22z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="nav" data-nav>
+    <a class="nav__logo" href="#top"><picture><source type="image/avif" srcset="./img/logo-sm.avif" /><img src="./img/logo-sm.webp" alt="QUISHRISH home" width="520" height="273" /></picture></a>
+    <nav aria-label="Sections">
+      <ul class="nav__links">
+        <li><a href="#play">How to play</a></li>
+        <li><a href="#challenge">10-second challenge</a></li>
+        <li><a href="#squad">The squad</a></li>
+        <li><a href="#inside">What's inside</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--small" href="#notify">Get notified</a>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO: the box front, alive ============ -->
+    <section class="hero" id="top" aria-label="QUISHRISH">
+      <div class="hero__pin">
+        <div class="hero__stage" data-stage>
+          <div class="hero__interior" aria-hidden="true">
+            
+          </div>
+          <div class="hero__peek" aria-hidden="true">
+            <img class="peek peek--green" src="./img/m-green-spiky.webp" alt="" width="560" height="564" />
+            <img class="peek peek--purple" src="./img/m-purple-blob.webp" alt="" width="560" height="481" />
+          </div>
+          <picture class="hero__face">
+            <source type="image/avif" srcset="./img/monster-sm.avif 1000w, ./img/monster.avif 1484w" sizes="(max-width: 700px) 170vw, 100vw" />
+            <source type="image/webp" srcset="./img/monster-sm.webp 1000w, ./img/monster.webp 1484w" sizes="(max-width: 700px) 170vw, 100vw" />
+            <img src="./img/monster.webp" alt="The QUISHRISH box: a furry black monster with big eyes, yellow horns and a glossy pink-purple mouth ring around a real hand hole" width="1484" height="1060" fetchpriority="high" />
+          </picture>
+
+          <h1 class="wordmark">
+            <picture>
+              <source type="image/avif" srcset="./img/logo-sm.avif 520w, ./img/logo.avif 974w" sizes="(max-aspect-ratio: 1/1) 92vw, 34vw" />
+              <source type="image/webp" srcset="./img/logo-sm.webp 520w, ./img/logo.webp 974w" sizes="(max-aspect-ratio: 1/1) 92vw, 34vw" />
+              <img src="./img/logo.webp" alt="QUISHRISH™ — the squishy monster board game" width="974" height="511" fetchpriority="high" />
+            </picture>
+          </h1>
+
+          <p class="tagline"><span>Feel it.</span> <span>Find it.</span> <span>Win it!</span></p>
+
+          <ul class="badges" aria-label="Game details">
+            <li class="badge badge--cyan"><small>Ages</small><b>6+</b></li>
+            <li class="badge badge--purple"><b>2–6</b><small>players</small></li>
+            <li class="badge badge--yellow"><b>20–40</b><small>min</small></li>
+          </ul>
+
+          <a class="hero__cta burst-sticker" href="#notify" data-burst style="--burst:var(--yellow)">
+            <span>Coming<br />soon!<em>Get<br />notified</em></span>
+          </a>
+
+          <div class="hero__scroll" aria-hidden="true"><svg><use href="#hand" /></svg><span>Scroll to reach in</span></div>
+
+          <div class="hero__fly" aria-hidden="true">
+            <img class="fly fly--pink" src="./img/m-pink-blob.webp" alt="" width="560" height="425" data-squish />
+            <img class="fly fly--cyan" src="./img/m-cyan-star.webp" alt="" width="560" height="508" data-squish />
+            <img class="fly fly--panda" src="./img/m-panda.webp" alt="" width="560" height="428" data-squish />
+            <img class="fly fly--upright" src="./img/m-pink-upright.webp" alt="" width="560" height="601" data-squish />
+          </div>
+        </div>
+        <p class="hero__lede">The squishy monster board game. Reach into the monster's mouth, feel the squishies, and guess who is who.</p>
+      </div>
+    </section>
+
+    <!-- ============ REACH IN: feel around in the dark ============ -->
+    <section class="dark" id="reach" aria-labelledby="reach-title">
+      <div class="dark__copy">
+        <h2 class="candy candy--xl" id="reach-title" style="--c:var(--yellow);--s:#D98A00">Reach in...<br />if you dare!</h2>
+        <p class="lead">It's dark inside the monster. Move your hand around and find all six squishies. <strong>No peeking!</strong></p>
+        <p class="dark__count" aria-live="polite"><span data-found>0</span>/6 found</p>
+      </div>
+      <div class="dark__field" data-field tabindex="0" role="group" aria-label="Inside the monster. Move your hand with the mouse, your finger, or the arrow keys.">
+        <div class="dark__layer dark__layer--dim" aria-hidden="true"></div>
+        <div class="dark__layer dark__layer--lit" aria-hidden="true"></div>
+        <svg class="dark__hand" aria-hidden="true"><use href="#hand" /></svg>
+      </div>
+      <div class="drip drip--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ THE BOX IS THE MONSTER (3D box) ============ -->
+    <section class="boxsec" id="box" aria-labelledby="box-title">
+      <div class="boxsec__pin">
+        <div class="boxsec__copy">
+          <h2 class="candy candy--l" id="box-title" style="--c:var(--pink);--s:#A3105F">The box is<br />the monster.</h2>
+          <ol class="boxsec__points">
+            <li class="is-on" data-point="0"><b>A real hand hole</b><span>Right in the monster's mouth. Slide your hand in. The squishies are waiting.</span></li>
+            <li data-point="1"><b>A top hole for loading</b><span>Drop the squishies in through the top, then cover it so nobody can peek.</span></li>
+            <li data-point="2"><b>Your squishies, its snacks</b><span>Turn your squishy collection into a game!</span></li>
+          </ol>
+        </div>
+        <div class="box3d" aria-label="3D view of the QUISHRISH box" role="img">
+          <div class="box3d__shadow"></div>
+          <div class="box3d__cube" data-cube>
+            <div class="face face--front"><img src="./img/box-front.webp" alt="" width="1400" height="1005" loading="lazy" /></div>
+            <div class="face face--back"><img src="./img/box-back.webp" alt="" width="1400" height="1006" loading="lazy" /></div>
+            <div class="face face--left"><img src="./img/box-sideL.webp" alt="" width="780" height="1011" loading="lazy" /></div>
+            <div class="face face--right"><img src="./img/box-sideR.webp" alt="" width="780" height="1011" loading="lazy" /></div>
+            <div class="face face--top"><img src="./img/box-top.webp" alt="" width="1400" height="775" loading="lazy" /></div>
+            <div class="face face--bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO PLAY ============ -->
+    <section class="play" id="play" aria-labelledby="play-title">
+      <div class="drip drip--top" aria-hidden="true"></div>
+      <div class="play__head">
+        <h2 class="candy candy--l" id="play-title" style="--c:var(--cyan);--s:#0A86C2">How to play</h2>
+        <p class="lead">Three steps. Zero reading the rulebook twice.</p>
+      </div>
+      <div class="play__track" data-track>
+        <article class="step" style="--accent:var(--pink)">
+          <picture><source type="image/avif" srcset="./img/scene-1.avif" /><img src="./img/scene-1.webp" alt="A kid grins holding up a challenge card" width="912" height="575" loading="lazy" /></picture>
+          <div class="step__text">
+            <span class="step__num" aria-hidden="true">1</span>
+            <h3>Pick a challenge!</h3>
+            <p>Draw a card for a crazy squishy mission.</p>
+          </div>
+          <span class="step__burst" style="--bx:83%;--by:80%" aria-hidden="true">Draw<br />a card!</span>
+        </article>
+        <article class="step" style="--accent:var(--lime)">
+          <picture><source type="image/avif" srcset="./img/scene-2.avif" /><img src="./img/scene-2.webp" alt="A hand reaches into the monster box's mouth while a kid cheers" width="912" height="565" loading="lazy" /></picture>
+          <div class="step__text">
+            <span class="step__num" aria-hidden="true">2</span>
+            <h3>Reach in... if you dare!</h3>
+            <p>Slide your hand into the monster mouth, feel the squishies, guess who is who. No peeking!</p>
+          </div>
+          <span class="step__burst" style="--bx:80%;--by:82%" aria-hidden="true">No<br />peeking!</span>
+        </article>
+        <article class="step" style="--accent:var(--cyan)">
+          <picture><source type="image/avif" srcset="./img/scene-3.avif" /><img src="./img/scene-3.webp" alt="A hand moves a pawn along the neon game board toward the key" width="912" height="585" loading="lazy" /></picture>
+          <div class="step__text">
+            <span class="step__num" aria-hidden="true">3</span>
+            <h3>Race to win!</h3>
+            <p>Every right guess moves you closer to the key. First to free the squishies wins.</p>
+          </div>
+          <span class="step__burst" style="--bx:80%;--by:81%" aria-hidden="true">Free the<br />squishies!</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 10 SECOND CHALLENGE (mini game) ============ -->
+    <section class="challenge" id="challenge" aria-labelledby="challenge-title">
+      <div class="challenge__card">
+        <img src="./img/card-challenge.webp" alt="Challenge card: Only 10 seconds! Show the squishies for 5 seconds, put them back and mix them up, find and identify them in 10 seconds." width="640" height="863" loading="lazy" />
+      </div>
+      <div class="challenge__copy">
+        <h2 class="candy candy--l" id="challenge-title" style="--c:var(--yellow);--s:#D98A00">Only 10 seconds!</h2>
+        <p class="lead">Play a real card from the deck. Memorize three squishies in 5 seconds. They drop into the monster and get mixed. Then find them by shape before the clock runs out.</p>
+      </div>
+      <div class="game" data-game>
+        <div class="game__mouth">
+          <img class="game__ring" src="./img/ring.webp" alt="" width="900" height="900" loading="lazy" />
+          <div class="game__inside" data-inside></div>
+          <div class="game__timer" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" class="game__track" /><circle cx="50" cy="50" r="44" class="game__prog" data-prog /></svg>
+            <span data-time>10</span>
+          </div>
+        </div>
+        <p class="game__status" aria-live="assertive" data-status>Ready when you are.</p>
+        <button class="btn" type="button" data-start>Start the challenge</button>
+        <p class="game__note">In the real game, the companion app runs the timer and the score.</p>
+      </div>
+    </section>
+
+    <!-- ============ THE SQUAD ============ -->
+    <section class="squad" id="squad" aria-labelledby="squad-title">
+      <h2 class="candy candy--l" id="squad-title" style="--c:var(--lime);--s:#4C8F00">Meet the squishies</h2>
+      <p class="lead">Six squishy monsters. Go on, poke one.</p>
+      <ul class="squad__grid">
+        <li style="--c:var(--pink)"><button type="button" class="squishy" data-squish aria-label="Squish the pink blob"><img src="./img/m-pink-blob.webp" alt="" width="560" height="425" loading="lazy" /></button><span>Pink blob</span></li>
+        <li style="--c:var(--cyan)"><button type="button" class="squishy" data-squish aria-label="Squish the cyan star"><img src="./img/m-cyan-star.webp" alt="" width="560" height="508" loading="lazy" /></button><span>Cyan star</span></li>
+        <li style="--c:var(--lime)"><button type="button" class="squishy" data-squish aria-label="Squish the green spiky"><img src="./img/m-green-spiky.webp" alt="" width="560" height="564" loading="lazy" /></button><span>Green spiky</span></li>
+        <li style="--c:#fff"><button type="button" class="squishy" data-squish aria-label="Squish the panda"><img src="./img/m-panda.webp" alt="" width="560" height="428" loading="lazy" /></button><span>Panda</span></li>
+        <li style="--c:var(--pink)"><button type="button" class="squishy" data-squish aria-label="Squish the pink upright"><img src="./img/m-pink-upright.webp" alt="" width="560" height="601" loading="lazy" /></button><span>Pink upright</span></li>
+        <li style="--c:var(--purple-lt)"><button type="button" class="squishy" data-squish aria-label="Squish the purple blob"><img src="./img/m-purple-blob.webp" alt="" width="560" height="481" loading="lazy" /></button><span>Purple blob</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ WHAT'S INSIDE ============ -->
+    <section class="inside" id="inside" aria-labelledby="inside-title">
+      <div class="drip drip--top drip--yellow" aria-hidden="true"></div>
+      <h2 class="candy candy--l" id="inside-title" style="--c:var(--yellow);--s:#D98A00">What's in the monster?</h2>
+      <div class="inside__layout">
+        <figure class="item item--board">
+          <img src="./img/board.webp" alt="Neon game board with a winding path, caged squishies and a padlock" width="1400" height="1050" loading="lazy" />
+          <figcaption><b>Game board</b> with caged squishies and a key</figcaption>
+        </figure>
+        <figure class="item item--cards">
+          <div class="fan">
+            <img src="./img/card-back.webp" alt="" width="640" height="913" loading="lazy" />
+            <img src="./img/card-hand.webp" alt="" width="640" height="924" loading="lazy" />
+            <img src="./img/card-event.webp" alt="" width="640" height="910" loading="lazy" />
+            <img src="./img/card-challenge.webp" alt="" width="640" height="863" loading="lazy" />
+          </div>
+          <figcaption><b>Challenge cards</b> for crazy squishy missions</figcaption>
+        </figure>
+        <figure class="item item--app">
+          <img src="./img/phone.webp" alt="Concept screen of the QUISHRISH companion app" width="720" height="1070" loading="lazy" />
+          <figcaption><b>Companion app</b> for timer, scoring and challenges <small>(app concept)</small></figcaption>
+        </figure>
+        <figure class="item item--squad">
+          <div class="mini-squad">
+            <img src="./img/m-pink-blob.webp" alt="" loading="lazy" width="560" height="425" /><img src="./img/m-cyan-star.webp" alt="" loading="lazy" width="560" height="508" /><img src="./img/m-green-spiky.webp" alt="" loading="lazy" width="560" height="564" /><img src="./img/m-panda.webp" alt="" loading="lazy" width="560" height="428" /><img src="./img/m-pink-upright.webp" alt="" loading="lazy" width="560" height="601" /><img src="./img/m-purple-blob.webp" alt="" loading="lazy" width="560" height="481" />
+          </div>
+          <figcaption><b>6 squishy monsters</b></figcaption>
+        </figure>
+        <figure class="item item--box">
+          <img src="./img/box-front.webp" alt="" width="1400" height="1005" loading="lazy" />
+          <figcaption><b>The monster box</b> with a real hand hole</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ KIDS / PARENTS ============ -->
+    <section class="why" aria-labelledby="why-kids">
+      <div class="why__kids">
+        <h2 class="why__title" id="why-kids">Why kids love it</h2>
+        <ul class="bigwords">
+          <li style="--c:var(--pink)">Touch</li>
+          <li style="--c:var(--cyan)">Memory</li>
+          <li style="--c:var(--yellow)">Speed</li>
+          <li style="--c:var(--lime)">Laughs</li>
+        </ul>
+      </div>
+      <div class="why__parents">
+        <h2 class="why__title why__title--dark">Why parents buy it</h2>
+        <ul class="checklist">
+          <li><b>Screen-light, hands-on play.</b> The fun is in your fingertips.</li>
+          <li><b>A smart app twist.</b> Timer, scoring and challenges, without anyone staring at a screen all night.</li>
+          <li><b>Family game night.</b> 2 to 6 players, 20 to 40 minutes.</li>
+          <li><b>Easy 3-step play.</b> Pick a card, reach in, race to the key.</li>
+        </ul>
+        <img class="why__sticker" src="./img/m-panda.webp" alt="" width="560" height="428" loading="lazy" data-squish />
+      </div>
+    </section>
+
+    <!-- ============ WHY NOW (verified numbers) ============ -->
+    <section class="now" aria-labelledby="now-title">
+      <h2 class="now__title" id="now-title">Good timing for a game like this</h2>
+      <dl class="stats">
+        <div><dt>+37%</dt><dd>dollar sales growth for Games &amp; Puzzles, the largest U.S. toy supercategory, in 2025.<sup><a href="#fn1" id="r1">1</a></sup></dd></div>
+        <div><dt>78%</dt><dd>of parents want more toys that help kids build skills like creativity and problem-solving.<sup><a href="#fn2" id="r2">2</a></sup></dd></div>
+        <div><dt>52%</dt><dd>of U.S. parents report buying a blind box toy for their kids or themselves.<sup><a href="#fn2" id="r3">2</a></sup></dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="notify" id="notify" aria-labelledby="notify-title">
+      <img class="notify__splash notify__splash--a" src="./img/splash-2.webp" alt="" aria-hidden="true" loading="lazy" />
+      <img class="notify__splash notify__splash--b" src="./img/splash-1.webp" alt="" aria-hidden="true" loading="lazy" />
+      <img class="notify__splash notify__splash--c" src="./img/splash-3.webp" alt="" aria-hidden="true" loading="lazy" />
+      <div class="notify__inner">
+        <p class="notify__sticker burst-sticker" data-burst style="--burst:var(--pink)"><span>Coming<br />soon!</span></p>
+        <h2 class="candy candy--l" id="notify-title" style="--c:#fff;--s:#C59BDB">Be first to reach in.</h2>
+        <p class="lead">QUISHRISH is coming soon to big-box stores across the U.S. Leave your email and we'll tell you the moment it lands.</p>
+        <p class="price">Price: <span>[MSRP $__]</span></p>
+        <form class="form" data-form novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" required />
+          <button class="btn" type="submit">Get notified</button>
+        </form>
+        <p class="form__msg" data-msg aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__logo"><picture><source type="image/avif" srcset="./img/logo.avif" /><img src="./img/logo.webp" alt="QUISHRISH™" width="974" height="511" loading="lazy" decoding="async" /></picture></p>
+    <p class="footer__tag">Feel it. Find it. Win it!</p>
+    <p class="footer__small">Ages 6+. 2–6 players. 20–40 minutes. Product shown is a design prototype; app screens are concepts. Retailers named are planned, not confirmed.</p>
+    <ol class="footnotes">
+      <li id="fn1">Circana, “U.S. Toy Industry Returns to Growth in 2025,” Feb 3, 2026. Growth was driven primarily by Pokémon. <a href="https://www.circana.com/post/u-s-toy-industry-returns-to-growth-in-2025-circana-reports" rel="noopener" target="_blank">Source</a> <a href="#r1" aria-label="Back to reference 1">↩</a></li>
+      <li id="fn2">The Toy Association, “Trends &amp; Products” research page (accessed Nov 2026). <a href="https://www.toyassociation.org/ta/toys/research-and-data/reports/trends/trends-and-products.aspx" rel="noopener" target="_blank">Source</a> <a href="#r2" aria-label="Back to reference 2">↩</a></li>
+    </ol>
+    <p class="footer__small">© 2026 QUISHRISH. All rights reserved.</p>
+  </footer>
+
+  <canvas class="confetti" data-confetti aria-hidden="true"></canvas>
+</body>
+</html>
